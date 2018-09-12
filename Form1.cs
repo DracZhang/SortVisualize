@@ -227,5 +227,10 @@ namespace Sort
                 p.Location = Loc;
             }
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            th.Abort();
+        }
     }
 }
