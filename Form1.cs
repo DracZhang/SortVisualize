@@ -45,7 +45,7 @@ namespace Sort
             SortList = new List<int>();
 
             Bars = new Dictionary<int, Panel>();
-            Random ran = new Random(1000);
+            Random ran = new Random(DateTime.Now.Millisecond);
 
             for (int i = 0; i < TotalCount; i++)
             {
@@ -70,7 +70,7 @@ namespace Sort
 
         private void Sort()
         {
-            InsertionSort CS = new InsertionSort(SortList);
+            ShellsSort CS = new ShellsSort(SortList);
             CS.OnSwap += CS_OnSwap;
             CS.Run();
         }
