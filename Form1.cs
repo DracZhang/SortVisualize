@@ -52,7 +52,7 @@ namespace Sort
             cbSortSelect.Items.Add("Insertion Sort");
             cbSortSelect.Items.Add("Selection Sort");
             cbSortSelect.Items.Add("Shell's Sort");
-            cbSortSelect.Items.Add("Merge Sort");
+            cbSortSelect.Items.Add("Radix Sort");
 
             cbSortSelect.SelectedIndex = 5;
         }
@@ -161,8 +161,8 @@ namespace Sort
                 case "Shell's Sort":
                     SB = new ShellsSort(SortList);
                     break;
-                case "Merge Sort":
-                    SB = new MergeSort(SortList);
+                case "Radix Sort":
+                    SB = new RadixSort(SortList);
                     break;
                 default:
                     break;
