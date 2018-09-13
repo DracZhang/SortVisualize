@@ -12,6 +12,7 @@ namespace Sort
         public int TotalCount { get; private set; }
 
         public event EventHandler<OnSwapEventArgs> OnSwap;
+        public event EventHandler OnFinished;
 
         public SortBase(List<int> SortList)
         {
@@ -19,7 +20,10 @@ namespace Sort
             TotalCount = SortList.Count;
         }
 
-        public virtual void Run(){ }
+        public virtual void Run()
+        {
+            OnFinished?.Invoke(this, null);
+        }
 
         protected void Swap(int ID1, int ID2, int Value1, int Value2)
         {

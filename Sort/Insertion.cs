@@ -30,6 +30,8 @@ namespace Sort
 
                 Swap(i, MinIndex, SortList[i], MinValue);
             }
+
+            base.Run();
         }
     }
 }

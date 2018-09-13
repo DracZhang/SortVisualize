@@ -27,6 +27,8 @@ namespace Sort
                     }
                 }
             }
+
+            base.Run();
         }
     }
 }

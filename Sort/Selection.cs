@@ -45,6 +45,8 @@ namespace Sort
                     Swap(k, k - 1, SortList[k], SortList[k - 1]);
                 }
             }
+
+            base.Run();
         }
     }
 }

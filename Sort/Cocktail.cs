@@ -45,7 +45,8 @@ namespace Sort
 
                 Left++;
             }
-        }
 
+            base.Run();
+        }
     }
 }
